@@ -1,0 +1,66 @@
+@import "mixins";
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/images/bg-pattern-top.svg"),url('/images/bg-pattern-bottom.svg');
+    background-position: right 40vw bottom 40vh,left 40vw top 40vh;
+    background-repeat: no-repeat,no-repeat;
+    padding-top: 5rem;
+    
+
+    .card{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto;
+        width: 21.875rem;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+
+        @include breakpoint-up(medium){
+            
+
+        }
+
+        
+        &_body{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             padding-bottom: 1rem;
+             border-bottom: 1px solid hsl(227, 10%, 46%);
+
+             &_img{
+                border-radius: 50%;
+                border:5px solid white;
+                margin-top: calc(-48px - 10px);
+                }
+             &_name{
+                 margin-top: 1.5rem;
+                 span{
+                     color:hsl(227, 10%, 46%);;
+                     margin-left: 0.625rem;
+                     font-weight: 400;
+                 }
+                }
+                 &_place{
+                     margin-top: 0.5rem;
+                 
+             }
+            
+        }
+
+        &_footer{
+            margin: 1rem;
+            display: flex;
+            justify-content: space-around;
+          }
+
+       
+    }
+   
+
+ 
+}

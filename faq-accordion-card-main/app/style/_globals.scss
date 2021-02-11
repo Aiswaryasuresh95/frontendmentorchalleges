@@ -1,0 +1,43 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 0.75rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+
+
+}
+a,a:visited,a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+.underline{
+    height: 1px;
+    width: auto;
+    background-color: hsl(240, 5%, 91%);
+}
+
+.answer{
+    display: none;
+}
+
+.show .answer{
+    display: block;
+}
+
+.show img {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+  }

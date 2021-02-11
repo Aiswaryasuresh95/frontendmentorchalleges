@@ -1,0 +1,153 @@
+@import "mixins";
+
+.hero{
+    position: relative;
+    background-image: linear-gradient($Softviolet,$Softblue);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+
+    .main{
+        position: absolute;
+        height:auto;
+        width: 50rem;
+        background-color: white;
+        display: flex;
+  
+        border-radius: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include breakpoint-down(small){
+          width: 45rem;
+        }
+        
+        @include breakpoint-down(xsmall){
+          flex-direction: column;
+          width: 300px;
+
+        
+        }
+        
+
+
+       &__image{
+           height: auto;
+           width: 100%;
+           flex: 2;
+           
+
+       &__background{ 
+        position: relative;
+        background-image: url('/images/bg-pattern-desktop.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100%;
+        width: 100%;
+            
+        @include breakpoint-down(xsmall){
+          background-image: url('/images/bg-pattern-mobile.svg');
+          background-size: 80%;
+          height: 10rem;
+          background-position:top;
+          
+        }
+
+        
+            
+        
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url('/images/illustration-woman-online-desktop.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            left: -5%;
+            
+            @include breakpoint-down(xsmall){
+              background-image: url('/images/illustration-woman-online-mobile.svg');
+              background-size: 80%;
+              top: -55%;
+            }
+            
+
+        }
+    
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url('/images/illustration-box-desktop.svg');
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            height: 50%;
+            left: -20%;
+            top: 32%;
+
+            @include breakpoint-down(xsmall){
+              display: none;
+            }
+          }
+        }
+       }  
+
+
+       
+
+        &__accordion{
+          flex: 3;
+          margin-left: 5rem;
+          padding-top: 3rem;
+          
+          @include breakpoint-down(xsmall){
+            align-items: center;
+            margin-left: 3rem;
+            padding-top: 0;
+          }
+
+          &__title{
+              font-size: 2rem;
+              margin: 1rem;
+
+              @include breakpoint-down(xsmall){
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                
+              }
+
+          }
+
+          .accordion__wrapper{
+              padding-right: 4rem;
+
+               .faq{
+                  margin-bottom: 1rem;
+                
+          
+                .question{
+                
+                    display: -webkit-box;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    cursor: pointer;}
+                         
+                    }  
+                  }
+                }
+
+            }
+
+          }
+
+          
+        
+
+
+  
