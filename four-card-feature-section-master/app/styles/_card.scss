@@ -1,0 +1,51 @@
+.card{
+    position: relative;
+    
+
+    &__super{
+        position: absolute;
+        background-image: url('/images/icon-supervisor.svg');
+        border-top: 3px solid  hsl(212, 86%, 64%) ;
+        transform: translateX(-100%);
+         top: 25%;
+         margin-left: -8%;
+
+         @include breakpoint-down(xsmall){
+             position: relative;
+             transform: translateX(0);
+             top: 0;
+             margin-left: 0;
+         }
+         
+    }
+    
+    &__team{
+        background-image: url('/images/icon-team-builder.svg');
+        border-top: 3px solid  hsl(0, 78%, 62%);
+        
+    }
+
+    &__karma{
+        background-image: url('/images/icon-karma.svg');
+        border-top: 3px solid  hsl(34, 97%, 64%);
+
+
+    }
+
+    &__calc{
+        position: absolute;
+        background-image: url('/images/icon-calculator.svg');
+        border-top: 3px solid hsl(180, 62%, 55%);
+        transform: translateX(100%);
+        top: 25%;
+        margin-left: 8%;
+
+        @include breakpoint-down(xsmall){
+            position: relative;
+            transform: translateX(0);
+            top: 0;
+            margin-left: 0;
+        }
+      
+    }
+}
