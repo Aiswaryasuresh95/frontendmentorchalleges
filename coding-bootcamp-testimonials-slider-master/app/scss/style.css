@@ -1,0 +1,118 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-image: url("/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right 11vw bottom 11vh;
+}
+
+.centre {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.main .slider {
+  position: absolute;
+  width: 55rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main .slider__img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.main .slider__img .hero {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 8px;
+}
+
+.main .slider__img .btn {
+  width: 6rem;
+  height: 3rem;
+  z-index: 1;
+  border-radius: 20px;
+  border: transparent;
+  outline: transparent;
+  position: relative;
+  left: 10%;
+  top: -5%;
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main .slider__img .prev {
+  margin-right: 2rem;
+}
+
+.main .slider__img .prev, .main .slider__img .next {
+  cursor: pointer;
+}
+
+.main .slider__review {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+}
+
+.main .slider__review img {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  top: 10%;
+  left: 15%;
+}
+
+.main .slider__review p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.main .slider__review .name h1 {
+  display: inline;
+  font-size: 1rem;
+}
+
+.main .slider__review .name h3 {
+  display: inline;
+  font-weight: 400;
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */

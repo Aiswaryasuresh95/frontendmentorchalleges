@@ -1,0 +1,83 @@
+.main{
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+    
+    .slider{
+        position: absolute;
+        width: 55rem;
+        height: 30rem;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+        &__img{
+            order: 2;
+        
+
+
+            .hero{
+                width: 25rem;
+                height: 25rem;
+                border-radius: 8px;
+        
+            }
+            .btn{
+                width: 6rem;
+                height: 3rem;
+                z-index: 1;
+                border-radius: 20px;
+                border: transparent;
+                outline: transparent;
+                position: relative;
+                left: 10%;
+                top: -5%;
+                background-color: white;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+            }
+            .prev{
+                margin-right: 2rem;
+            
+            }
+            .prev,.next{
+                cursor: pointer;
+            }
+           
+        }
+
+        &__review{
+            order: 1;
+            position: relative;
+        
+
+            img{
+                position: relative;
+                width: 5rem;
+                height: 5rem;
+                top: 10%;
+                left: 15%;
+             }
+            
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+            .name{
+                
+                
+                h1{
+                    display: inline;
+                    font-size: 1rem;
+                }
+                h3{
+                 display: inline;
+                 font-weight: 400;
+                 color:  grey;
+                }
+            }
+            
+        }
+    }
+}
