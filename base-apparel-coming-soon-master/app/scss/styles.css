@@ -173,7 +173,7 @@
 }
 
 .main_flex .flex_content .email input {
-  width: 20rem;
+  width: 18rem;
   height: 3rem;
   outline: none;
   border: 1px solid #413a3a;
@@ -198,14 +198,16 @@
 }
 
 .main_flex .flex_content .email .error {
+  display: none;
   vertical-align: -10%;
-  display: inline;
+  display: none;
 }
 
 .main_flex .flex_content .email .error_msg {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
   color: #f96262;
+  display: none;
 }
 
 .main_flex .flex_content .email .btn {

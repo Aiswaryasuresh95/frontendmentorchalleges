@@ -140,7 +140,7 @@
                     
 
                 input{
-                    width: 20rem;
+                    width: 18rem;
                     height: 3rem;
                     outline: none;
                     border: 1px solid hsl(0, 6%, 24%);
@@ -162,15 +162,16 @@
                 }
                 .error{
                     
-                    
+                    display: none;
                     vertical-align:-10%;
-                    display: inline;
+                    display: none;
                     
                 }
                 .error_msg{
-                    font-size:0.8rem;
+                    font-size:1rem;
                     margin-top: 0.5rem;
                     color:hsl(0, 93%, 68%);
+                    display: none;
                     
                 }
                 
