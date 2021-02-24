@@ -1,0 +1,196 @@
+.main{
+    
+    min-height: 100vh;
+    background-image: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: 100%;
+    background-position: center;
+          
+    @media screen and (min-width:600px){
+        
+        height: 100vh;
+        background-image: url('/images/bg-pattern-desktop.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: -50%;
+    }
+  
+    
+    &_logo{
+        padding: 2rem 0 2rem 2rem;
+
+        @media screen and (min-width:600px){
+            padding-left: 4rem;
+        }
+        @media screen and (min-width:900px){
+            padding-left: 6rem;
+        }
+
+    }
+
+    &_flex{
+       
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+           
+          @media screen and (min-width:600px) {
+              flex-direction: row;
+              height: 100vh;
+              
+              
+          }
+    
+      
+
+        .flex_img{
+            width: 100%;
+            height: 250px;
+            background-image: url('/images/hero-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
+
+            @media screen and (min-width:600px) {
+                position: relative;
+                width: 40%;
+                height: 700px;;
+                background-image: url('/images/hero-desktop.jpg');
+                background-size: auto;
+                order: 2;
+                top: -20%;
+                flex: 1;
+              
+            }
+            @media screen and (min-width:900px){
+                 width: 50%;
+            }
+
+            // img{
+            //     width: 100%;
+            //           @media screen and (min-width:500px) {
+            //               height: 100vh;
+            //               width: 50vw;
+            //            }
+            //     }
+           }
+
+        .flex_content{
+             padding: 2rem;
+             padding-top: 6rem;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-content: center;
+             align-items: center;
+             justify-items: center;
+            
+               @media screen and (min-width:600px) {
+                   width: 60%;
+                order: 1;
+                padding: 0;
+                display: block;
+                padding-top: 4rem;
+                position: relative;
+                flex: 1;
+                padding-left: 4rem;
+                background-image: url('/images/bg-pattern-desktop.svg');
+                background-size: cover;
+                
+                 }
+                 @media screen and (min-width:900px){
+                     width: 50%;
+                     padding-left: 6rem;
+                 }
+            
+                 h1{
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1.5rem;
+                    letter-spacing: 0.8rem;
+                 }
+
+                h1:first-of-type 
+                {
+                    
+                    font-weight: 100;
+                    color: hsl(0, 36%, 70%);
+                }
+                h1:last-of-type{
+                    margin-bottom: 2rem;
+                }
+                p{
+                    color: hsl(0, 36%, 70%);
+                    text-align: center;
+
+                    @media screen and (min-width:600px){
+                        text-align: left;
+                        width: 20rem;
+                        
+                    }
+                    @media screen and (min-width:900px){
+                         width:25rem ;
+                    }
+                }
+
+                .email{
+                    position: relative;
+                     margin-top: 2rem;
+                  
+                    
+
+                input{
+                    width: 20rem;
+                    height: 3rem;
+                    outline: none;
+                    border: 1px solid hsl(0, 6%, 24%);
+                    border-radius: 3rem;
+                    background-color: transparent;
+                    vertical-align: bottom;
+                    padding-left: 2rem;
+                    font-size: 0.8rem;
+                    color: hsl(0, 36%, 70%);
+
+                  
+
+                    @media screen and (min-width:600px){
+                        width: 18rem;
+                    }
+                    @media screen and (min-width:900px){
+                        width: 25rem;
+                    }
+                }
+                .error{
+                    
+                    
+                    vertical-align:-10%;
+                    display: inline;
+                    
+                }
+                .error_msg{
+                    font-size:0.8rem;
+                    margin-top: 0.5rem;
+                    color:hsl(0, 93%, 68%);
+                    
+                }
+                
+                .btn{
+                
+                    width: 4rem;
+                    height: 3rem;
+                    border-radius: 3rem;
+                    outline: transparent;
+                    border: transparent;
+                    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+                    cursor: pointer;
+                    margin-left: -4rem;
+                }
+            }  
+               
+        }
+                
+     }
+
+}
+         
+
