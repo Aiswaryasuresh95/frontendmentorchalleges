@@ -198,9 +198,23 @@
 }
 
 .main_flex .flex_content .email .error {
-  display: none;
+  position: relative;
+  left: -6rem;
   vertical-align: -10%;
   display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .main_flex .flex_content .email .error {
+    left: -6rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main_flex .flex_content .email .error {
+    vertical-align: 0;
+    left: -6rem;
+  }
 }
 
 .main_flex .flex_content .email .error_msg {
@@ -208,6 +222,19 @@
   margin-top: 0.5rem;
   color: #f96262;
   display: none;
+  margin-left: -2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .main_flex .flex_content .email .error_msg {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main_flex .flex_content .email .error_msg {
+    margin-top: 0;
+  }
 }
 
 .main_flex .flex_content .email .btn {
