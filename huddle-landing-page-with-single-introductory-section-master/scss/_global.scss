@@ -1,0 +1,30 @@
+$bg__color: hsl(257, 40%, 49%);
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    background:$bg__color;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type:none;
+    display: inline;
+}
+
