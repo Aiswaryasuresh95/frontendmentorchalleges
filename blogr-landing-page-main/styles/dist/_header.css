@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/bg-pattern-intro.svg), linear-gradient(#ff8f70, #ff3d54);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 35% 30%, 0% 0%;
+  background-size: 100rem, cover;
+  border-bottom-left-radius: 10rem;
+}
+.header_logo {
+  font-size: 3rem;
+  color: white;
+  padding: 3rem 0 0 5%;
+}
+.header_text_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+  margin: 3%;
+  font-family: "Overpass", sans-serif;
+}
+.header_text_wrapper h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+.header_text_wrapper p {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  font-size: 1.2rem;
+  padding: 0 5%;
+}
+.header_btn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.header_btn_wrapper .btn {
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 5rem;
+  margin-left: 3%;
+  outline: none;
+  cursor: pointer;
+}
+.header_btn_wrapper .primary_btn {
+  color: #ff525d;
+  border: none;
+  transition: 0.3s;
+}
+.header_btn_wrapper .secondary_btn {
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+.header_btn_wrapper .primary_btn:hover {
+  background: #ff7a85;
+  color: white;
+}
+.header_btn_wrapper .secondary_btn:hover {
+  background: white;
+  color: #ff525d;
+}

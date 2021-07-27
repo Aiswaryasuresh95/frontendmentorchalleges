@@ -1,0 +1,92 @@
+
+.header{
+
+      height: 100vh;
+      background-image: url(/images/bg-pattern-intro.svg),
+      linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+      background-repeat: no-repeat,no-repeat;
+      background-position: 35% 30% ,0% 0%;
+      background-size:100rem,cover;
+      border-bottom-left-radius: 10rem;
+
+      &_logo{
+          font-size:3rem;  
+          color: white;
+          padding: 3rem 0 0 5%;  
+
+      }
+      &_text_wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top:8rem;
+            margin: 3%;
+            font-family:$var--fontfamily-ov;
+            
+
+            h1{
+              color: white;
+              font-size: $--header-title;
+              font-weight: 300;
+              text-align: center;
+      
+            }
+            p{
+                  color: white;
+                  text-align: center;
+                  margin-bottom: 1.3rem;
+                  font-size: $--header-para;
+                  padding:0 5%;
+            }
+
+      }
+      &_btn_wrapper{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin-top: 3rem;
+            // label{
+            //       padding: 3px;
+            // }
+
+            .btn{
+                  width: 9rem;
+                  height: 3rem;
+                  font-size: 1.1rem;
+                  font-weight: 600;
+                  border-radius: 5rem;
+                  margin-left: 3%;
+                  outline: none;
+                  cursor: pointer;
+
+            }
+            .primary_btn {
+                  color:  hsl(356, 100%, 66%);
+                  border: none;
+                  transition: 0.3s;
+
+            }
+            .secondary_btn{
+                  color: white;
+                  background: transparent;
+                  border: 2px solid white;
+                  transition: 0.3s;
+            }
+
+            .primary_btn:hover{
+               background:  hsl(355, 100%, 74%);
+               color: white;
+               
+
+            }
+            .secondary_btn:hover{
+                  background: white;
+                  color: hsl(356, 100%, 66%);
+            }
+
+
+      }
+
+
+}

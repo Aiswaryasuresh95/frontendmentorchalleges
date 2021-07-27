@@ -43,16 +43,9 @@ h1, h2, h3, p {
 
 .starcontainer p {
   font-size: 0.7rem;
-  display: inline;
   font-weight: 800;
   color: #502050;
   margin-left: 3rem;
-}
-
-@media screen and (max-width: 600px) {
-  .starcontainer p {
-    display: block;
-  }
 }
 
 .reviewcontainer {
@@ -66,6 +59,14 @@ h1, h2, h3, p {
 
 .reviewcontainer:not(:last-child) {
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .reviewcontainer {
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .reviewcontainer img {
@@ -132,6 +133,14 @@ h1, h2, h3, p {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .main .hero_header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .main .hero_header h1 {
   color: #502050;
   font-weight: 700;
@@ -143,6 +152,12 @@ h1, h2, h3, p {
   color: #937b92;
   font-size: 0.7rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .main .hero_header p {
+    margin-bottom: 2rem;
+  }
 }
 
 .main .hero_star {

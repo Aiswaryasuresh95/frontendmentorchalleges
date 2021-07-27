@@ -1,0 +1,255 @@
+ .main{
+     font-family:$var--fontfamily-ov;
+    
+     &_sect{
+        padding-top: 6rem;
+        text-align: center;
+          
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 15% 85%;
+            
+            padding: 6rem 0 0 6rem;
+            overflow: hidden;
+    
+        }
+
+        h2{
+            font-size: $--main-heading;
+           
+            margin-bottom: 1rem;
+
+            @include breakpoint-up(large){
+                margin-bottom: 1rem;
+                text-align: center;
+                
+            }
+
+           }
+        p{
+            font-size: 1rem;
+
+            @include breakpoint-up(large){
+              font-size: 13px;
+              text-align: left;
+              
+            }
+        }
+
+         
+        &_title{
+              @include breakpoint-up(large){
+                  grid-row: 1;
+                  grid-column: 1/3;
+              }
+         }
+
+         &_illustration{
+
+            @include breakpoint-up(large){
+            grid-column: 2;
+            grid-row: 1/3;
+            }
+
+            .section__illustartion__c{
+                width: 90%;
+                @include breakpoint-up(large){
+                    display: none;
+                }
+
+            }
+            .section_illustration_left{
+                display: none;
+
+                @include breakpoint-up(large){
+                    display: block;
+                     width: 45rem;
+                     margin-left: 2rem;
+                    
+                }
+            }
+         }
+
+        
+
+         &_article{
+             padding: 0 3rem ;
+             margin-top: 2rem;
+
+             @include breakpoint-up(large){
+             grid-row: 2;
+             grid-column: 1;
+             padding: 0  5rem 0 2rem;
+             margin-top: 5rem;
+             text-align: justify;
+             }
+
+             .article{
+                 margin-bottom: 2rem;
+                  
+                 @include breakpoint-up(large){
+                     h2{
+                         text-align: left;
+                     }
+                 }
+
+             }
+
+         }
+     }
+
+        &_mobile{
+            // width: 100%;
+            // height: 100%;
+            background:url(/images/bg-pattern-circles.svg),linear-gradient($linergradient--body);
+            text-align: center;
+            margin-top: 15rem;
+            border-top-right-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            background-size: 150%;
+            background-repeat: no-repeat;
+            background-position: -6rem -15rem,0% 0%;
+
+            @include breakpoint-up(medium){
+                background-size: 120%;
+            }
+            
+            @include breakpoint-up(large){
+              display: flex;
+              height: 50vh;
+              background-position: left,center;
+              background-size: 70%,100%;
+              margin-top: 4rem;
+              
+            }
+
+
+            &_illustration{
+                  position: relative;
+                  top: -10rem;
+
+                  @include breakpoint-up(large){
+                      top: -3rem;
+                      left: 6rem;
+                  }
+                  
+                  
+
+                .illustartion_phone{
+                    width:70%;
+                     z-index: 0;
+
+                     @include breakpoint-up(large){
+                         width: 25rem;
+                     }
+                    
+                }
+            }
+          
+            &_article{
+                color: white;
+                position: relative;
+                top: -10rem;
+                @include breakpoint-up(large){
+                    top: 2rem;
+                    margin-left: 10rem;
+                    text-align: justify;
+                    padding: 0 2rem;
+                }
+                
+
+                h2{
+                    font-size: $--mobile--heading;
+                    color: white;
+                    
+                    @include breakpoint-up(large){
+                       font-size: 2rem;
+                       
+                    }
+
+                }
+                p{
+                    margin-top: 2rem;
+                    font-size: 1rem;
+                    padding:2% 12%;
+                    font-family:$var--fontfamily-ov;
+                    line-height: 2rem;
+                    
+                    @include breakpoint-up(large){
+                        margin-top: 1rem;
+                        padding:0 ;
+                        font-size: 13px;
+                    }
+
+
+                }
+
+            }
+        }
+
+
+        &_section3{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+
+            @include breakpoint-up(large){
+                flex-direction: row;
+                margin-top: 7rem;
+                justify-content: space-around;
+                text-align: left;
+                
+            }
+            
+            
+            &_illustartion{
+                .illustration--m{
+                    width:100%;
+                    
+                    @include breakpoint-up(large){
+                        display: none;
+                    }
+                    
+                }
+                .illustartion--d{
+                    display: none;
+                    @include breakpoint-up(large){
+                        display: block;
+                         width: 40rem;
+                         margin-left: -10rem;
+                    }
+                    
+                }
+            }
+            &_article{
+                @include breakpoint-up(large){ margin-left: 10%;}
+               
+                h2{
+                    font-size: $--main-heading;
+                    font-weight: 600;
+                    font-family:$var--fontfamily-ov;
+                    margin-bottom: 1rem;
+                   }
+                p{
+                    font-size: 1rem;
+                    font: 200;
+                    font-family:$var--fontfamily-ov;
+                    padding:0 4rem;
+                    margin-bottom: 2rem;
+
+                    @include breakpoint-up(large){
+                        padding:0 20% 0 0; 
+                    }
+                    
+                }
+        
+            }
+        }
+        
+}
+ 

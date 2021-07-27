@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css";>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="theme-1">
+<section class="main">
+<div class="calc">
+
+  <header class="header"> 
+    <h1>calc</h1>
+    
+    
+  
+    <div class="theme-switch">
+        <h1>THEME</h1>
+        <div class="theme-controler">
+            <div class="radio-labels" id="theme-selectors">
+               <!-- <input type="radio" name="theme-selector" id="theme-1">  -->
+                <label for="theme-1">1</label>
+                <!-- <input type="radio" name="theme-selector" id="theme-2">  -->
+                <label for="theme-2">2</label>
+               <!-- <input type="radio" name="theme-selector" id="theme-3">  -->
+                <label for="theme-3">3</label>
+            </div>
+            
+            <div class="toggle-container" id="toggle-container">
+                <div class="toggle-circle theme-1" id="toggle"></div>
+            </div>
+        </div>
+      </div>
+</header>
+
+
+ 
+    
+      
+  
+      <div class="result">
+      <input type="text" class="calculator-screen" value="" disabled />
+      </div>
+    
+    <div class="typepad">
+      <button class=" btn--digit number">7</button>
+      
+      <button class="btn--digit number">8</button>
+
+      <button class="btn--digit number">9</button>
+
+      <button class="btn--del number" value="delete">DEL</button>
+
+      <button class="btn--digit number">4</button>
+
+      <button class="btn--digit number">5</button>
+
+      <button class="btn--digit number">6</button>
+
+      <button class="operator number" value="+">+</button>
+
+      <button class="btn--digit number">1</button>
+
+      <button class="btn--digit number">2</button>
+
+      <button class="btn--digit number">3</button>
+
+      <button class="operator number" value="-">-</button>
+
+      <button class="btn--dec number" value=".">.</button>
+
+      <button class="btn--digit number">0</button>
+
+      <button class="operator number" value="/">/</button>
+
+      <button class="operator number" value="*">&times;</button>
+
+      <button class="btn--reset number " value="reset">RESET</button>
+
+      <button class="operator btn--equals number" value="=">=</button>
+
+    </div>
+</div>
+</section>
+
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app/js/calculate.js"></script>
+</body>
+
+</html>

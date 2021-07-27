@@ -1,0 +1,30 @@
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #25252d;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border-top-right-radius: 5rem;
+}
+.footer_logo {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 2rem 0;
+}
+.footer_company h2, .footer_product h2, .footer_connect h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 2.5rem 0 1rem 0;
+}
+.footer_company p, .footer_product p, .footer_connect p {
+  padding-top: 1rem;
+}
+.footer_product > h2 {
+  padding-top: 0;
+}
+.footer_connect > p:last-child {
+  padding-bottom: 4rem;
+}

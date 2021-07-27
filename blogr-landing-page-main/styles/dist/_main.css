@@ -1,0 +1,9 @@
+.main_sect {
+  padding-top: 6rem;
+}
+.main_sect_title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+}

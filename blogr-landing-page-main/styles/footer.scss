@@ -1,0 +1,56 @@
+.footer{
+    
+    display:  flex;
+    flex-direction: column;
+    background-color: hsl(240, 10%, 16%);
+    color:  hsl(0, 0%, 100%);
+    align-content: center;
+    justify-content: center;
+    text-align: center;  
+    border-top-right-radius: 5rem;   
+
+    @include breakpoint-up(medium){
+       flex-direction: row;
+       justify-content: space-evenly;
+       
+    }
+    
+    @include breakpoint-up(large){
+       margin-top: 5%;
+    }
+    
+
+
+    &_logo{
+        font-size: 1.8rem;
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    &_company,&_product,&_connect{
+        h2{color:hsl(0, 0%, 100%);
+        font-weight: 300;
+        font-size: 1rem;
+         padding:2.5rem 0 1rem 0;
+        }
+        p{
+            padding-top: 1rem;
+        }
+    }
+
+    &_product > h2{
+        padding-top: 0;
+
+        @include breakpoint-up(medium){
+            padding-top: 2.5rem;
+        }
+
+
+    }
+    
+    &_connect >p:last-child{
+        padding-bottom: 4rem;
+    }
+
+
+
+}

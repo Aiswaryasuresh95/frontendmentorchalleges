@@ -14,10 +14,6 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  background-image: url("/images/pattern-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: right 11vw bottom 11vh;
 }
 
 .centre {
@@ -90,6 +86,8 @@ h1, h2, h3 {
       -ms-flex-order: 1;
           order: 1;
   position: relative;
+  left: 5%;
+  overflow: hidden;
 }
 
 .main .slider__review img {
@@ -105,12 +103,12 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
-.main .slider__review .name h1 {
+.main .slider__review h1 {
   display: inline;
   font-size: 1rem;
 }
 
-.main .slider__review .name h3 {
+.main .slider__review h3 {
   display: inline;
   font-weight: 400;
   color: grey;

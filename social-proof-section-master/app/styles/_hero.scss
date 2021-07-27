@@ -26,16 +26,26 @@
              }
 
         &_header{
+            @media screen and (max-width:600px){
+                align-items: center;
+            }
 
             h1{color: hsl(300, 43%, 22%);
                 font-weight: 700;
                 font-size: 2rem;
                 margin-bottom: 1rem;
+              
             }
             p{
                 color: hsl(303, 10%, 53%);
                 font-size: 0.7rem;
                 font-weight: 400;
+
+                @media screen and (max-width:600px){
+                    margin-bottom: 2rem;
+                }
+
+
             }
         }
 
@@ -73,6 +83,8 @@
 
             @media screen and (max-width:600px){
                 flex-direction:column;
+                
+                
 
             }
          
