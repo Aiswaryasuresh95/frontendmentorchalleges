@@ -1,0 +1,145 @@
+.hero{
+    height: 100vh;
+    background-image: url('/images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:white;
+    
+
+&--header{
+display: flex;
+justify-content:space-between;
+padding:2% 3%;
+
+    .header--logo
+    {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+   .header--menu{
+       margin-left: -1rem;
+      
+
+       @include  breakpoint-down(small){
+        position:absolute;
+        width: 90%;
+        margin: 15% 0 0 2%;
+        height: 20rem;
+        background-color: white;
+        color:$Grayishblue;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        font-weight: 900;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+
+        &.active{
+            
+            left: 3%;
+        }
+   }
+    ul{  
+        li{
+        margin:0.5rem 2.5rem 0 0;
+        font-size: 1rem;
+        font-weight: 200;
+        float: left;
+        cursor: pointer;
+
+        @include  breakpoint-down(small){
+        float: none;
+        margin: 2.5rem 0 2.5rem 0;
+        font-size: 1.5rem;
+            }
+
+       }
+    }
+}
+
+.hamburger {
+left: 0;
+top:0;
+display: none;
+
+
+@include  breakpoint-down(small){
+    display: block;
+    cursor: pointer;
+
+    &.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    &.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    &.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+
+.bar {
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+transition: all 0.3s ease-in-out;
+background-color: white;
+}
+}
+button{
+width: 7rem;
+height: 2.5rem;
+background-color: $contact--buttoncolor;
+border: transparent;
+outline: transparent;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 4rem;
+font-family: Barlow;
+font-size:0.8rem;
+transition:all 0.5s;
+
+@include  breakpoint-down(small){
+    width: 8rem;
+    height: 3rem;
+    color: $Grayishblue;
+}
+
+
+&:hover{
+background-color: $contact--buttonhover;
+color: #fff;
+
+@include  breakpoint-down(small){
+    background-color: hsl(51, 100%, 49%);
+}
+
+}
+
+}
+}
+
+
+&--tagline{
+font-family:$main--heading;
+text-transform: uppercase;
+font-size: 2rem;
+letter-spacing: 0.5rem;
+text-align: center;
+margin-top: 3rem;
+
+img{
+animation: pulse-image 2s infinite;
+cursor: pointer;
+}
+}
+
+
+}

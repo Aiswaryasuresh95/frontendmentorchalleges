@@ -1,0 +1,77 @@
+.testimonial{
+    text-align: center;
+    padding: 10%;
+    background-color:$Softred ;
+
+   h1{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $Grayishblue;
+        margin-bottom: 5rem;
+        font-family:$main--heading;
+        letter-spacing: 0.5rem;
+        font-weight: 900;
+   }
+   &--client{
+       display: flex;
+
+       @include  breakpoint-down(small){
+        flex-direction: column;
+
+    }
+
+
+        &--one,
+        &--two,
+        &--three{
+            padding: 0 2%;
+
+            @include  breakpoint-down(small){
+                padding: 0;
+    
+            }
+    
+
+            img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                margin-bottom: 2rem;
+                @include  breakpoint-down(small){
+                    margin-bottom: 1rem;
+                }
+                
+            }
+            p{
+                font-size: 0.8rem;
+                color:$Verydarkgrayishblue;
+                font-weight: 600;
+                line-height:1.5rem;
+                margin-bottom: 3rem;
+
+                @include  breakpoint-down(small){
+                    margin-bottom: 1rem;
+                    font-size: 1rem;
+                }
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                    color: $Grayishblue;
+                    @include  breakpoint-down(small){
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+            h3{
+               font-family: $main--heading;
+               color: $Verydarkdesaturatedblue;
+               font-weight: 900;
+               margin-bottom: 0.5rem;
+            }
+            
+
+        }
+    }
+
+  
+}
