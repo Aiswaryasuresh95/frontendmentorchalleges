@@ -19,6 +19,7 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+  color: black;
 }
 
 h1, h2, h3, h4, p {
@@ -40,10 +41,62 @@ h2 {
   border-bottom-left-radius: 10rem;
 }
 
-.header_logo {
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0 0 3rem;
+}
+
+.header-nav .nav--logo {
   font-size: 3rem;
   color: white;
-  padding: 3rem 0 0 5%;
+  margin-right: 2rem;
+}
+
+.header-nav .nav--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-nav .nav--menu .nav-button {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header-nav .nav--menu .nav-button .btn {
+  border: transparent;
+  outline: transparent;
+  background: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.header-nav .nav--menu .nav-dropdown {
+  width: auto;
+  height: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 1rem 0 0 1rem;
+  display: none;
+}
+
+.header-nav .nav--menu .nav-dropdown a {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.header-nav .nav--menu .nav-dropdown a:hover {
+  font-weight: 600;
+}
+
+.header-nav .nav--menu .sign--button {
+  margin-left: 10rem;
 }
 
 .header_text_wrapper {
@@ -60,8 +113,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 8rem;
-  margin: 3%;
+  margin: 10% 0 0 3%;
   font-family: "Overpass", sans-serif;
 }
 
@@ -127,6 +179,10 @@ h2 {
 .header_btn_wrapper .secondary_btn:hover {
   background: white;
   color: #ff525d;
+}
+
+.header-nav .nav--menu .nav-button:hover .nav-dropdown {
+  display: block;
 }
 
 .main {
