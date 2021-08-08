@@ -28,3 +28,7 @@ h1, h2, h3, h4, p {
 h2 {
   color: #1f3f5b;
 }
+
+ul, li {
+  list-style-type: none;
+}
