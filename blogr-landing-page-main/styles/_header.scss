@@ -1,6 +1,6 @@
 
 .header{
-
+      width: 100%;
       height: 100vh;
       background-image: url(/images/bg-pattern-intro.svg),
       linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
@@ -12,6 +12,7 @@
       .nav{
            padding: 2rem 0 0 4rem;
            display:flex;
+           
       //define width and height for nav or it will effect other//
            width: 100%;
            height: 10rem;
@@ -22,37 +23,69 @@
                  color: white;
 
            }
+
            &--menu{
+            position: relative;
+            width:50%;
+            height: 100%;
+            margin-top: 1rem;
+           
+               
+        .btn{
+              width: 5rem;
+            float: left;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            margin-left: 2rem;
+            
 
-      a
-                 .btn{
-                       width: 2rem;
-                       float: left;
-                       font-size: 1rem;
-                       color: white;
-                       margin-left: 3rem;
-                       cursor: pointer;
+      .dropdown{
+           
+            width:150%;
+            height: auto;
+            background: white;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            z-index: 100;
+            li{
+            margin-left: -2rem;
+            padding: 0.5rem;
+            display:none;
+            z-index: 100;
+            
+            }
+            
+        }
+     }
+}
+    
+   &--signbtn{
+           margin-left: 5rem;
+           button{
+                 color: white;
+                 font-size: 1rem;
+                 background: transparent;
+                 outline: transparent;
+                 border: transparent;
+                 text-transform: capitalize;
+                 cursor: pointer;
+                 width: 6rem;
+                 height: 3rem;
+                 border-radius: 2rem;
+                 margin-left: 1rem;
+                 transition: all 0.5s;
+                 margin-top: 1rem;
+                 &:hover{
+                       background: white;
+                       color: hsl(13, 100%, 72%);
 
-                       .dropdown{
-                             
-                             height: auto;
-                             background: white;
-                             border-radius: 0.5rem;
-                             
-                             li{
-                              margin-left: -2rem;
-                              padding: 0.5rem;
-                              display:none;
-                              z-index: 100;
-                              
-                             }
-                             
-                       }
                  }
            }
-      }
+     }
+}
 
-      
+          
 
      
       &_text_wrapper{
@@ -133,8 +166,10 @@
    .nav{
          &--menu{
                .btn:hover{
-                     li{
+                     
+                     li{ 
                            display: block;
+                           
                      }
                }
          }
