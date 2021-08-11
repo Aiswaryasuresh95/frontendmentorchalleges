@@ -148,6 +148,7 @@ ul, li {
 .header .nav--mobile {
   padding: 2rem 2rem 0 2rem;
   width: 100%;
+  display: none;
 }
 
 @media (max-width: 63.9375em) {
@@ -220,7 +221,7 @@ ul, li {
 }
 
 .header .nav--mobile--menu.active {
-  left: 3%;
+  left: 2rem;
 }
 
 .header .nav--mobile--menu--container:hover .nav--mobile--menu--dropdown {

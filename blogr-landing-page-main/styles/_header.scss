@@ -114,7 +114,7 @@
       
       padding: 2rem 2rem 0 2rem;
       width: 100%;
-      
+      display: none;
 
       @include  breakpoint-down(medium){
            display: block;
@@ -178,7 +178,8 @@
             transition: 0.3s;
 
             &.active{
-                  left: 3%;
+                  left: 2rem;
+
             }
 
             &--container:hover{
